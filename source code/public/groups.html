@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+    
+    <title>Manage Groups</title>
+</head>
+
+<body>
+    <header>
+        <br>
+        <h1>Manage Groups</h1>
+        <!--Horizontal Menu-->
+        <div class="d-flex justify-content-center">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="orders.html">Orders</a></li>
+                    <li><a href="customers.html"> Customers</a></li>
+                    <li><a href="groups.html"> Groups</a></li>
+                    <li><a href="experiences.html"> Experiences</a></li>
+                    <li><a href="alpacas.html"> Alpacas</a></li>
+                    <li><a href="experiences_alpacas.html">Experiences-Alpacas</a></li>
+                </ul>
+            </nav>
+          </div>
+    </header>
+    <br>
+
+    <main>
+        <!-- Add a new group -->
+        <div class="d-flex justify-content-center"><h3>Add a New Group</h3></div>
+        <br>
+        <form action="#" method="POST" class="d-flex justify-content-center">
+            <label>Group Name</label>
+            <input type="text" name="group name" id="group_name">
+                
+            <label>Discount</label>
+            <input type="text" name="discount" id="discount">
+
+            <input type="submit" value="SUBMIT" class = "button" id="submitGrp">
+        </form>
+        <br>
+        <br>
+        <!-- Display the Groups -->
+
+        <div class="d-flex justify-content-center"><h2>Display All Groups</h2></div>
+        <br>
+        <table id="groupsTable" class="table"></table>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2021 Beaver Bytes</p>
+    </footer>
+
+    <script src="groups.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

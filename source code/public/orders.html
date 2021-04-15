@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+
+    <title>Manage Orders</title>
+</head>
+
+<body>
+    <header>
+        <br>
+        <h1>Manage Orders</h1>
+        <!--Horizontal Menu-->
+        <div class="d-flex justify-content-center">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <ul class="nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="orders.html">Orders</a></li>
+                  <li><a href="customers.html"> Customers</a></li>
+                  <li><a href="groups.html"> Groups</a></li>
+                  <li><a href="experiences.html"> Experiences</a></li>
+                  <li><a href="alpacas.html"> Alpacas</a></li>
+                  <li><a href="experiences_alpacas.html">Experiences-Alpacas</a></li>
+              </ul>
+          </nav>
+        </div>
+    </header>
+    <br>
+
+
+    <main>
+        <!-- Search --> 
+        <div class="d-flex justify-content-center"><h3>Search Order by Customer Name</h3></div>
+        <br>
+        <form action="#" method="GET" class="d-flex justify-content-center">
+            <!-- removed value="Clark Kent in line 44" -->
+            <input type="text" name="cus_name" id="cus_name">              
+            <input type="submit" value="search" class = "button" id="submitSearch">
+            <input type="button" value="clear search" class = "button" id="clearSearch">
+            </div>
+        </form>   
+        <br>
+        <br>
+
+        <div class="d-flex justify-content-center" id="search_text"></div>
+        
+        <!-- Display the Search Results -->
+        <div class="d-flex justify-content-center"></div>
+        <br>
+        <table id="searchTable" class="table">
+        </table>
+
+        <!-- Add a New Order Form -->
+        <div class="d-flex justify-content-center"><h3>Add a New Order</h3></div>
+        <br>
+        <form action="#" method="POST" class="d-flex justify-content-center">
+            <!-- will test out INSERT first and then change back this section to a select-option dropdown list -->
+            <label id = "customer_list">Customer</label>
+
+            <label id = "ea_list">Experiences-Alpaca</label>
+              
+            <label>Quantity</label>
+            <input type="number" name="ticket quantity" id="ticket_qty">
+                    
+            <label>Date</label>
+            <input type="date" name="order date" id="order_date">
+            
+            <input type="submit" value="SUBMIT" class = "button" id="submitOrd">
+        </form>
+        <br>
+        <br>
+
+        <!-- Display the orders table -->
+        <div class="d-flex justify-content-center"><h2>Display All Orders</h2></div>
+        <br>
+        <table id="ordersTable" class="table"></table>
+    
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2021 Beaver Bytes</p> 
+    </footer>
+
+    <script src="orders.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

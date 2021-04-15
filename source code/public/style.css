@@ -1,0 +1,108 @@
+h1 {
+  text-align: center;
+  color: olivedrab;
+  font-family: 'Lobster', cursive;
+}
+
+
+/*  Menu */
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+.nav li {
+  display: inline-block;
+  margin-left: 1.2em;
+  font-size: 1.5em;
+}
+
+.nav a:hover {
+  background-color: burlywood;
+  color:white;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px darkgrey;
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Images */
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+
+/* tables and forms */ 
+
+table { 
+border-collapse:collapse;
+}
+
+table input {
+background-color:white;
+border:none;
+color: black;
+}
+
+table input:enabled {
+  background-color:whitesmoke;
+}
+
+form, form input {
+vertical-align: middle;
+}
+
+label {
+padding-right: 12px; 
+padding-left: 12px;
+}
+
+.email {
+width: 200px;
+}
+
+#customersTable td:nth-child(4) input {  /* column for email addresses */
+width: 280px;
+}
+
+
+/* buttons */ 
+.update, .delete, .button {
+border-radius: 5px;
+border-color: white;
+color: white;
+padding: 2px 20px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px; 
+}
+
+.update {
+background-color: orange; 
+}
+
+.delete {
+background-color: lightcoral;
+}
+
+button:focus{
+outline: none;
+}
+
+.button {                             /* Submit Button */
+background-color: darkcyan; 
+margin-left: 12px;
+}
+
+/* Footer */
+footer p {
+  text-align: center;
+}

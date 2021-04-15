@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
+
+    <title>Manage Alpacas</title>
+</head>
+
+<body>
+    <header>
+        <br>
+        <h1>Manage Alpacas</h1>
+
+        <!--Horizontal Menu-->
+        <div class="d-flex justify-content-center">
+          <nav class="navbar navbar-expand-lg navbar-light">
+              <ul class="nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="orders.html">Orders</a></li>
+                  <li><a href="customers.html"> Customers</a></li>
+                  <li><a href="groups.html"> Groups</a></li>
+                  <li><a href="experiences.html"> Experiences</a></li>
+                  <li><a href="alpacas.html"> Alpacas</a></li>
+                  <li><a href="experiences_alpacas.html">Experiences-Alpacas</a></li>
+              </ul>
+          </nav>
+        </div>
+    </header>
+    <br>
+
+    <main>
+        <br>
+        <!--Add a new alpaca-->
+        <div class="d-flex justify-content-center"><h3>Add a New Alpaca</h3></div>
+        <br>
+        <form action="#" method="POST" class="d-flex justify-content-center">         
+              <label>Alpaca Name</label>
+              <input type="text" name="alpaca name" id="alp_name">
+            
+              <label>Age</label>
+              <input type="number" name="alpaca age" id="alp_age">
+
+              <label>Breed</label>
+              <input type="text" name="breed" id="breed">
+
+              <input type="submit" value="SUBMIT" class = "button" id="submitAlp">      
+        </form>
+        <br>
+        <br>
+        
+        <!--Display the alpacas table-->
+        <div class="d-flex justify-content-center"><h2>Display All Alpacas</h2></div>
+        <br>
+        <table id="alpacasTable" class="table"></table>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2021 Beaver Bytes</p> 
+    </footer>
+    
+    
+    <script src="alpacas.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
