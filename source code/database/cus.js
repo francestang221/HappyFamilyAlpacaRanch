@@ -64,20 +64,6 @@ module.exports = function() {
         });
     });
 
-    // // customers table: Update data - PUT
-    // app.put('/customers',function(req,res,next){
-    // var {first_name, last_name, email, customer_id} = req.body; 
-    // mysql.pool.query(
-    //     updateQueryCus,
-    //     [first_name, last_name, email],
-    //     (err, result) => {
-    //     if(err){
-    //     next(err);
-    //     return;
-    //     }
-    //     getAllDataCus(res);});
-    // });
-
     // customers table: Delete data - DELETE
     app.delete('/customers',function(req,res,next){
     var { customer_id } = req.body;
